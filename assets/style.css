@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding:0;
+}
+
+.main {
+  margin:0;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.flex-container-row {
+  display: flex;
+}
+
+.display {
+  background-color: #F6EFE3;
+  border: 1px solid #333;
+  width: 100%
+  padding: 5px 20px;
+  font-size: 2em;
+}
+
+.button {
+  flex-basis: 25%;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 30px;
+  border: 1px solid #333;
+  background:#d2d2d2);
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #E0A39C;
+}
+
+.double {
+  flex-basis: 50%;
+}
+
+.operator,
+.negative,
+.equals {
+  background:#FBC7C3;
+}
+
+.history {
+  width: 80%;
+  margin: 20px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.history table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #777;
+}
+
+.history table thead th {
+  padding: 15px;
+  background: #FBC7C3;
+}
+
+@media screen and (max-width: 513px) {
+   .button {
+       padding: 10px;
+   }
+   .history {
+     width: 100%;
+   }
+}
